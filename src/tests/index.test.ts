@@ -1,7 +1,7 @@
 import path from 'path';
 import fs from 'fs';
 
-import extract, { Options } from '../index';
+import extract, { Options } from '../extract';
 
 describe('extract', () => {
   it('should throw an error when no filePath argument is not specified', () => {

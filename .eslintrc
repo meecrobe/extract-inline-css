@@ -16,6 +16,7 @@
   },
   "plugins": ["@typescript-eslint", "jest"],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "no-unused-vars": "off"
   }
 }

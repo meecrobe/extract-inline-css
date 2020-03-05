@@ -3,13 +3,35 @@
   "version": "1.0.0",
   "description": "Extract inline CSS from HTML",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": "Vadzim Tsupryk <vadzim.tsupryk@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc && node dist/index.js",
+    "build": "tsc",
     "test": "jest --watchAll",
     "format": "prettier --write src/**/*.ts",
-    "lint": "eslint src/**/*.ts"
+    "lint": "eslint src/**/*.ts",
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn test && yarn lint",
+    "preversion": "yarn lint",
+    "version": "yarn format && git add .",
+    "postversion": "git push && git push --tags"
+  },
+  "files": ["dist/**/*"],
+  "keywords": [
+    "css",
+    "extract",
+    "html",
+    "inline",
+    "styles"
+  ],
+  "bugs": {
+    "url": "https://github.com/meecrobe/extract-inline-css/issues"
+  },
+  "homepage": "https://github.com/meecrobe/extract-inline-css#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:meecrobe/extract-inline-css.git"
   },
   "dependencies": {
     "cheerio": "^0.22.0",
