@@ -4,7 +4,7 @@ import fs from 'fs';
 import extract, { Options } from '../extract';
 
 describe('extract', () => {
-  it('should throw an error when no filePath argument is not specified', () => {
+  it('should throw an error when filePath argument is not specified', () => {
     expect(() => {
       // @ts-ignore
       extract();
@@ -26,19 +26,18 @@ describe('extract', () => {
   });
 
   describe('options', () => {
-    jest.mock('fs');
-    // @ts-ignore
-    fs.writeFileSync.mockReturnValue(true);
+    const fsSpy = jest
+      .spyOn(fs, 'writeFileSync')
+      .mockImplementation(() => true);
 
     beforeEach(() => {
-      // @ts-ignore
-      fs.writeFileSync.mockClear();
+      fsSpy.mockClear();
     });
 
     it('should create files', () => {
       extract(path.join(__dirname, 'files/test2.html'));
 
-      expect(fs.writeFileSync).toHaveBeenCalledTimes(2);
+      expect(fsSpy).toHaveBeenCalledTimes(2);
     });
 
     it('should return an object', () => {
@@ -49,7 +48,7 @@ describe('extract', () => {
       expect(
         typeof extract(path.join(__dirname, 'files/test2.html'), options)
       ).toBe('object');
-      expect(fs.writeFileSync).not.toHaveBeenCalled();
+      expect(fsSpy).not.toHaveBeenCalled();
     });
   });
 });
