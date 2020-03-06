@@ -86,17 +86,17 @@ body {
 
 ## Options
 
-| Option              | Type                                    | Default         | Description                                    |
-| ------------------- | --------------------------------------- | --------------- | ---------------------------------------------- |
-| cssFilename         | `string`                                | `extracted.css` | Filename of the resulting CSS file             |
-| dist                | `string`                                | `.`             | Output directory path                          |
-| extractGlobalStyles | `boolean`                               | `true`          | Extract CSS from `<style>` tags                |
-| formatCss           | `boolean`                               | `true`          | Beautify CSS output                            |
-| formatHtml          | `boolean`                               | `false`         | Beautify HTML output                           |
-| htmlFilename        | `string`                                | `result.html`   | Filename of the resulting HTML file            |
-| keepStyleAttribute  | `boolean`                               | `false`         | Do not strip 'style' attributes from HTML tags |
-| keepStyleTags       | `boolean`                               | `false`         | Do not strip `<style>` tags                    |
-| out                 | `'file'` <code>&#124;</code> `'object'` | `file`          | Output format                                  |
+| Option              | Type                       | Default         | Description                                    |
+| ------------------- | -------------------------- | --------------- | ---------------------------------------------- |
+| cssFilename         | `string`                   | `extracted.css` | Filename of the resulting CSS file             |
+| dist                | `string`                   | `.`             | Output directory path                          |
+| extractGlobalStyles | `boolean`                  | `true`          | Extract CSS from `<style>` tags                |
+| formatCss           | `boolean`                  | `true`          | Beautify CSS output                            |
+| formatHtml          | `boolean`                  | `false`         | Beautify HTML output                           |
+| htmlFilename        | `string`                   | `result.html`   | Filename of the resulting HTML file            |
+| keepStyleAttribute  | `boolean`                  | `false`         | Do not strip 'style' attributes from HTML tags |
+| keepStyleTags       | `boolean`                  | `false`         | Do not strip `<style>` tags                    |
+| out                 | `'file'` &#124; `'object'` | `file`          | Output format                                  |
 
 ## License
 
