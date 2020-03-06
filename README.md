@@ -32,7 +32,7 @@ const { css, html } = extract('./index.html', {
 });
 ```
 
-Input:
+### Input:
 
 ```html
 <!DOCTYPE html>
@@ -53,7 +53,7 @@ Input:
 </html>
 ```
 
-Output:
+### Output:
 
 `result.html`
 
