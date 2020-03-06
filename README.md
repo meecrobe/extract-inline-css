@@ -32,6 +32,58 @@ const { css, html } = extract('./index.html', {
 });
 ```
 
+Input:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: #bada55;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="font-size: 22px; line-height: 1.2;">Hello world!</h1>
+  </body>
+</html>
+```
+
+Output:
+
+`result.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="h1_g4q7h2">Hello world!</h1>
+  </body>
+</html>
+```
+
+`extracted.css`
+
+```css
+body {
+  background: #bada55;
+}
+
+.h1_g4q7h2 {
+  font-size: 22px;
+  line-height: 1.2;
+}
+```
+
 ## Options
 
 | Option              | Type                | Default         | Description                                    |
