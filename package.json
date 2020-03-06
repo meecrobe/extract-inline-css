@@ -4,7 +4,7 @@
   "description": "Extract inline CSS from HTML",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "author": "Vadzim Tsupryk <vadzim.tsupryk@gmail.com>",
+  "author": "Vadzim Tsupryk <meecrobe@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
