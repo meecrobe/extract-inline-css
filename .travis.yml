@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - '12.7.0'
+cache: yarn
+
+jobs:
+  include:
+    - name: 'Lint'
+      script:
+        - yarn run lint
+
+    - name: 'Test'
+      script:
+        - yarn run test
