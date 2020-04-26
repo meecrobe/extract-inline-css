@@ -1,6 +1,6 @@
 {
   "name": "extract-inline-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extract inline CSS from HTML",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -38,7 +38,8 @@
   },
   "dependencies": {
     "cheerio": "^0.22.0",
-    "js-beautify": "^1.10.3"
+    "js-beautify": "^1.10.3",
+    "minimist": "1.2.3"
   },
   "devDependencies": {
     "@babel/core": "^7.8.7",
