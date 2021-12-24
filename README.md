@@ -93,7 +93,7 @@ body {
 | extractGlobalStyles | `boolean`                  | `true`          | Extract CSS from `<style>` tags                |
 | formatCss           | `boolean`                  | `true`          | Beautify CSS output                            |
 | formatHtml          | `boolean`                  | `false`         | Beautify HTML output                           |
-| htmlFilename        | `string`                   | `result.html`   | Filename of the resulting HTML file            |
+| htmlFilename        | `string`                   | `output.html`   | Filename of the resulting HTML file            |
 | keepStyleAttribute  | `boolean`                  | `false`         | Do not strip 'style' attributes from HTML tags |
 | keepStyleTags       | `boolean`                  | `false`         | Do not strip `<style>` tags                    |
 | out                 | `'file'` &#124; `'object'` | `file`          | Output format                                  |
